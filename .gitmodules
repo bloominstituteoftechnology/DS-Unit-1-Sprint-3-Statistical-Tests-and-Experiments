@@ -1,0 +1,3 @@
+[submodule "AB-Demo"]
+	path = module4-real-world-experiment-design/AB-Demo
+	url = git@github.com:colejhudson/AB-Demo.git
