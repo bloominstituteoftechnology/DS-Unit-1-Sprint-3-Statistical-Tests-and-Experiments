@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AB Demo</title>
+        <script type="text/javascript">
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         ga('create', 'UA-139916785-1', {  // TODO - replace the UA tracking ID!
+            'cookieDomain': 'none'
+         });
+        </script>
+
+        <script type="text/javascript" src="abalytics.js"></script>
+    </head>
+
+    <body>
+        <div class="experiment1_text">
+            This content will be replaced by ABalytics
+        </div>
+
+        <form class="experiment1_button">
+            This will be replaced too, with a button for the form
+        </form>
+    </body>
+
+    <script type="text/javascript">
+     ABalytics.init({
+         experiment1: [
+             {
+                 name: 'variant1',
+                 'experiment1_text': 'Pretty please click the button with sugar on top!',
+                 'experiment1_button':
+                       '<input type="button" value="Click me!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'nice\'); alert(\'Thanks!\');">'
+             },
+             {
+                 name: 'variant2',
+                 'experiment1_text': 'You better click that button...',
+                 'experiment1_button':
+                       '<input type="button" value="Click me, OR ELSE" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You will be spared.\');">'
+             }
+         ]
+     });
+     ga('send', 'pageview');
+
+     window.onload = function() {
+         ABalytics.applyHtml();
+     };
+    </script>
+</html>
