@@ -14,8 +14,6 @@ statsmodels
 sympy
 Pillow
 chardet
-requests
-fastai
 folium
 graphviz
 kaggle
@@ -27,4 +25,4 @@ lxml
 html5lib
 nbconvert
 urllib3
-itertools
+requests
