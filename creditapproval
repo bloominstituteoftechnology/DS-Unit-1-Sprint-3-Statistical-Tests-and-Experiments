@@ -1,0 +1,249 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\">
+<html>
+<head>
+<title>UCI Machine Learning Repository: Credit Approval Data Set</title>
+
+<!-- Stylesheet link -->
+<link rel="stylesheet" type="text/css" href="../assets/ml.css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkform ( form )
+{
+  // see http://www.thesitewizard.com/archive/validation.shtml
+  // for an explanation of this script and how to use it on your
+  // own website
+
+  // ** START **
+  if (form.q.value == "")
+  {
+    alert( "Please enter search terms." );
+    form.q.focus();
+    return false ;
+  }
+
+  if (getCheckedValue(form.sitesearch) == "ics.uci.edu" && form.q.value.indexOf("site:archive.ics.uci.edu/ml") == -1)
+  {
+    form.q.value = form.q.value + " site:archive.ics.uci.edu/ml";
+  }
+
+  // ** END **
+  return true ;
+}
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) {
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+
+<!-- SITE HEADER (INCLUDES LOGO AND SEARCH BOX) -->
+
+<table width=100% bgcolor="#003366">
+<tr>
+	<td>
+		<span class="normal"><a href="../index.html" alt="Home"><img src="../assets/logo.gif"
+border=0></img></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://cml.ics.uci.edu"><font color="FFDD33">Center for Machine Learning and Intelligent Systems</font></a></span>
+	</td>
+	<td width=100% valign=top align="right">
+		<span class="whitetext">
+		<a href="../about.html">About</a>&nbsp;
+		<a href="../citation_policy.html">Citation Policy</a>&nbsp;
+		<a href="../donation_policy.html">Donate a Data Set</a>&nbsp;
+		<a href="../contact.html">Contact</a>
+		</span>
+
+		<br>
+		<br>
+		<!-- Search Google -->
+
+		<FORM method=GET action=http://www.google.com/custom onsubmit="return checkform(this);">
+		<INPUT TYPE=text name=q size=30 maxlength=255 value="">
+		<INPUT type=submit name=sa VALUE="Search">
+		<INPUT type=hidden name=cof VALUE="AH:center;LH:130;L:http://archive.ics.uci.edu/assets/logo.gif;LW:384;AWFID:869c0b2eaa8d518e;">
+		<input type=hidden name=domains value="ics.uci.edu">
+		<br>
+		<input type=radio name=sitesearch value="ics.uci.edu" checked> <span class="whitetext"><font size="1">Repository</font></span>
+		<input type=radio name=sitesearch value=""> <span class="whitetext"><font size="1">Web</font></span>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<A HREF=http://www.google.com/search><IMG SRC=http://www.google.com/logos/Logo_25blk.gif border=0 ALT=Google align=middle height=27></A>
+		<br>
+		</FORM>
+		<!-- Search Google -->
+
+
+		<span class="whitetext"><a href="../datasets.php"><font size="3" color="#FFDD33"><b>View
+ALL Data Sets</b></font></a></span>
+		<br>
+	</td>
+</tr>
+</table>
+
+
+<br />
+<table width=100% border=0 cellpadding=2><tr><td>
+
+   <table><tr>
+     <td valign=top>
+	<p>
+	<span class="heading"><b>Credit Approval Data Set</b></span>
+	<br><span class="normal"><i><font size=4 >Download</font></i>: <a href="../machine-learning-databases/credit-screening/"><font
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Folder</font></a>, <a href="../machine-learning-databases/credit-screening/crx.names"><font
+style="BACKGROUND-COLOR: #FFFFAA" size=4>Data Set Description</font></a></span></p>
+
+	<p class="normal"><b>Abstract</b>: This data concerns credit card applications; good mix of attributes</p>
+     </td>
+     <td> </td>
+   </tr></table>
+
+<table border=1 cellpadding=6>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Data Set Characteristics:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">Multivariate</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Instances:</b></p></td>
+		<td><p class="normal">690</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Area:</b></p></td>
+		<td><p class="normal">Financial</p></td>
+	</tr>
+
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Attribute Characteristics:</b></p></td>
+		<td><p class="normal">Categorical, Integer, Real</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Attributes:</b></p></td>
+		<td><p class="normal">15</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Date Donated</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Associated Tasks:</b></p></td>
+		<td><p class="normal">Classification</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Missing Values?</b></p></td>
+		<td><p class="normal">Yes</p></td>
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Number of Web Hits:</b></p></td>
+		<td><p class="normal">348099</p></td>
+	</tr>
+	<!--
+	<tr>
+
+		<td bgcolor="#DDEEFF"><p class="normal"><b>Highest Percentage Achieved:&nbsp;&nbsp;</b></p></td>
+		<td><p class="normal">N/A</p></td>
+	</tr>
+	-->
+</table>
+
+
+<br />
+
+<p class="small-heading"><b>Source:</b></p>
+<p class="normal">(confidential source) <br><br>Submitted by <u>quinlan <b>'@'</b> cs.su.oz.au</u></p>
+
+<br />
+
+<p class="small-heading"><b>Data Set Information:</b></p>
+<p class="normal">This file concerns credit card applications.  All attribute names and values have been changed to meaningless symbols to protect confidentiality of the data.<br>  <br>This dataset is interesting because there is a good mix of attributes -- continuous, nominal with small numbers of values, and nominal with larger numbers of values.  There are also a few missing values.</p>
+
+<br />
+
+<p class="small-heading"><b>Attribute Information:</b></p>
+<p class="normal">A1:	b, a.<br>A2:	continuous.<br>A3:	continuous.<br>A4:	u, y, l, t.<br>A5:	g, p, gg.<br>A6:	c, d, cc, i, j, k, m, r, q, w, x, e, aa, ff.<br>A7:	v, h, bb, j, n, z, dd, ff, o.<br>A8:	continuous.<br>A9:	t, f.<br>A10:	t, f.<br>A11:	continuous.<br>A12:	t, f.<br>A13:	g, p, s.<br>A14:	continuous.<br>A15:	continuous.<br>A16: +,-         (class attribute)</p>
+
+<br />
+
+<p class="small-heading"><b>Relevant Papers:</b></p>
+<p class="normal">Quinlan. "Simplifying decision trees", Int J Man-Machine Studies 27, Dec 1987, pp. 221-234.<br><a href="http://rexa.info/paper/a4b6ebb7accef3ee497d6e127f4a0adc5ab16d25">[Web Link]</a><br><br>Quinlan. "C4.5: Programs for Machine Learning", Morgan Kaufmann, Oct 1992<br><a href="http://rexa.info/paper/ad6784a63b18b8018e884ada406b63bc1c9fa6e3">[Web Link]</a><br></p>
+
+<br />
+
+
+<!-- OLD CODE:
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" />
+<p class="normal">Xiaoming Huo. <a
+href="http://rexa.info/paper/af26080292d3845212afdc432dfb8a1d1cdb5c8b">FBP: A Frontier-Based Tree-Pruning Algorithm</a>. Seoung Bum Kim. 2002.  [<a
+href="../support/Credit+Approval#af26080292d3845212afdc432dfb8a1d1cdb5c8b">View Context</a>].<br><br>Lorne Mason and Peter L. Bartlett and Jonathan Baxter. <a
+href="http://rexa.info/paper/63e63c88edc486c3b1b2aeebb790f88a119536c9">Improved Generalization Through Explicit Optimization of Margins</a>. Machine Learning, 38. 2000.  [<a
+href="../support/Credit+Approval#63e63c88edc486c3b1b2aeebb790f88a119536c9">View Context</a>].<br><br>Kagan Tumer and Joydeep Ghosh. <a
+href="http://rexa.info/paper/cf33e50e2855982af7c583c8e756a28a5e8f0aeb">Robust Combining of Disparate Classifiers through Order Statistics</a>. CoRR, csLG/9905013. 1999.  [<a
+href="../support/Credit+Approval#cf33e50e2855982af7c583c8e756a28a5e8f0aeb">View Context</a>].<br><br>Lorne Mason and Peter L. Bartlett and Jonathan Baxter. <a
+href="http://rexa.info/paper/271b9c67f2a11a31962a436a41aaa5ed148dda6e">Direct Optimization of Margins Improves Generalization in Combined Classifiers</a>. NIPS. 1998.  [<a
+href="../support/Credit+Approval#271b9c67f2a11a31962a436a41aaa5ed148dda6e">View Context</a>].<br><br></p>
+
+-->
+
+<p class="small-heading"><b>Papers That Cite This Data Set<sup>1</sup>:</b></p>
+<img src="../assets/rexa.jpg" /><p class="normal">Xiaoming Huo. <a
+href="http://rexa.info/paper/af26080292d3845212afdc432dfb8a1d1cdb5c8b">FBP: A Frontier-Based Tree-Pruning Algorithm</a>. Seoung Bum Kim. 2002.  [<a
+href="../support/Credit+Approval#af26080292d3845212afdc432dfb8a1d1cdb5c8b">View Context</a>].<br><br>Lorne Mason and Peter L. Bartlett and Jonathan Baxter. <a
+href="http://rexa.info/paper/63e63c88edc486c3b1b2aeebb790f88a119536c9">Improved Generalization Through Explicit Optimization of Margins</a>. Machine Learning, 38. 2000.  [<a
+href="../support/Credit+Approval#63e63c88edc486c3b1b2aeebb790f88a119536c9">View Context</a>].<br><br>Kagan Tumer and Joydeep Ghosh. <a
+href="http://rexa.info/paper/cf33e50e2855982af7c583c8e756a28a5e8f0aeb">Robust Combining of Disparate Classifiers through Order Statistics</a>. CoRR, csLG/9905013. 1999.  [<a
+href="../support/Credit+Approval#cf33e50e2855982af7c583c8e756a28a5e8f0aeb">View Context</a>].<br><br>Lorne Mason and Peter L. Bartlett and Jonathan Baxter. <a
+href="http://rexa.info/paper/271b9c67f2a11a31962a436a41aaa5ed148dda6e">Direct Optimization of Margins Improves Generalization in Combined Classifiers</a>. NIPS. 1998.  [<a
+href="../support/Credit+Approval#271b9c67f2a11a31962a436a41aaa5ed148dda6e">View Context</a>].<br><br></p>
+
+<br />
+
+<p class="small-heading"><b>Citation Request:</b></p>
+<p class="normal">Please refer to the Machine Learning
+Repository's <a href="../citation_policy.html">citation policy</a></p>
+
+</td></tr></table>
+
+
+<hr>
+
+<!-- OLD CODE:
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+-->
+
+<p class="normal"><font size=1>[1] Papers were automatically harvested and associated with this data set, in collaboration
+with <a href="http://rexa.info"><font size=1>Rexa.info</font></a></font></p>
+
+<table cellpadding=5 align=center><tr valign=center>
+		<td><p class="normal">Supported By:</p></td>
+        <td><img src="../assets/nsfe.gif" height=60 /> </td>
+        <td><p class="normal">&nbsp;In Collaboration With:</p></td>
+        <td><img src="../assets/rexaSmall.jpg" /></td>
+</tr></table>
+
+<center>
+<span class="normal">
+<a href="../about.html">About</a>&nbsp;&nbsp;||&nbsp;
+<a href="../citation_policy.html">Citation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../donation_policy.html">Donation Policy</a>&nbsp;&nbsp;||&nbsp;
+<a href="../contact.html">Contact</a>&nbsp;&nbsp;||&nbsp;
+<a href="http://cml.ics.uci.edu">CML</a>
+</span>
+</center>
+
+
+
+
+</body>
+</html>
