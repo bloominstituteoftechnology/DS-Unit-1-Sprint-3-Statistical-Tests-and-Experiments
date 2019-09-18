@@ -1,5 +1,6 @@
 ### ==== Project-Specific ==== ###
 
+*.data
 vscode_notebooks/
 
 
